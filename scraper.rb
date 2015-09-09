@@ -22,7 +22,7 @@ def scrape_list(url)
     data = {
       id: id,
       name: tds[2].css('a').text,
-      group: details[1],
+      faction: details[1],
       area: details[2],
       image: img,
       term: 18,
