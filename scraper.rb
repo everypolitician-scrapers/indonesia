@@ -37,7 +37,7 @@ terms = [
   {
     id: 18,
     start_date: '2014-10-01',
-    name: 'The Indonesian House – 11th General Election',
+    name: 'The Indonesian House - 11th General Election',
   }
 ]
 
