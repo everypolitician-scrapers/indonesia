@@ -1,25 +1,45 @@
-# This is a template for a Ruby scraper on morph.io (https://morph.io)
-# including some code snippets below that you should find helpful
+# #!/bin/env ruby
+# encoding: utf-8
 
-# require 'scraperwiki'
-# require 'mechanize'
-#
-# agent = Mechanize.new
-#
-# # Read in a page
-# page = agent.get("http://foo.com")
-#
-# # Find somehing on the page using css selectors
-# p page.at('div.content')
-#
-# # Write out to the sqlite database using scraperwiki library
-# ScraperWiki.save_sqlite(["name"], {"name" => "susan", "occupation" => "software developer"})
-#
-# # An arbitrary query against the database
-# ScraperWiki.select("* from data where 'name'='peter'")
+require 'scraperwiki'
+require 'nokogiri'
+require 'pry'
+require 'open-uri/cached'
 
-# You don't have to do things with the Mechanize or ScraperWiki libraries.
-# You can use whatever gems you want: https://morph.io/documentation/ruby
-# All that matters is that your final data is written to an SQLite database
-# called "data.sqlite" in the current working directory which has at least a table
-# called "data".
+OpenURI::Cache.cache_path = '.cache'
+
+def noko_for(url)
+  Nokogiri::HTML(open(url).read)
+end
+
+def scrape_list(url)
+  noko = noko_for(url)
+  noko.css('#data-anggota tbody tr').each do |tr|
+    tds = tr.css('td')
+    details = tds[2].inner_html.split('<br>')
+    img = URI.join(url, tds[1].css('img/@src').to_s).to_s
+    id = tds[1].css('a/@href').to_s.split('/').last
+    data = {
+      id: id,
+      name: tds[2].css('a').text,
+      group: details[1],
+      area: details[2],
+      image: img,
+      term: 18,
+      source: url
+    }
+    ScraperWiki.save_sqlite([:id], data)
+  end
+end
+
+scrape_list('http://dpr.go.id/en/anggota')
+
+terms = [
+  {
+    id: 18,
+    start_date: '2014-10-01',
+    name: 'The Indonesian House – 11th General Election',
+  }
+]
+
+ScraperWiki.save_sqlite([:id], terms, 'terms')
