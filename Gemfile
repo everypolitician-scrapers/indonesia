@@ -10,4 +10,4 @@ gem "scraperwiki", git: "https://github.com/openaustralia/scraperwiki-ruby.git",
 gem "pry"
 gem "colorize"
 gem "nokogiri"
-gem "open-uri-cached"
+gem "scraped_page_archive"
