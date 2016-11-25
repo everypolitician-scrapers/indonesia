@@ -10,13 +10,14 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.4.0)
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
     coderay (1.1.0)
     colorize (0.7.7)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     git (1.3.0)
-    hashdiff (0.3.0)
+    hashdiff (0.3.1)
     httpclient (2.6.0.1)
     method_source (0.8.2)
     mini_portile (0.6.2)
@@ -26,8 +27,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    public_suffix (2.0.4)
     safe_yaml (1.0.4)
-    scraped_page_archive (0.3.1)
+    scraped_page_archive (0.5.0)
       git (~> 1.3.0)
       vcr-archive (~> 0.3.0)
     slop (3.6.0)
@@ -53,5 +55,8 @@ DEPENDENCIES
   scraped_page_archive
   scraperwiki!
 
+RUBY VERSION
+   ruby 2.0.0p648
+
 BUNDLED WITH
-   1.10.6
+   1.13.6
