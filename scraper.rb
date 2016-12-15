@@ -30,14 +30,3 @@ def scrape_list(url)
 end
 
 scrape_list('http://dpr.go.id/en/anggota')
-
-terms = [
-  {
-    id: 18,
-    start_date: '2014-10-01',
-    name: 'The Indonesian House - 11th General Election',
-    source: 'http://dpr.go.id/en/tentang/sejarah-dpr'
-  }
-]
-
-ScraperWiki.save_sqlite([:id], terms, 'terms')
