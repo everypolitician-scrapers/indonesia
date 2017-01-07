@@ -3,6 +3,7 @@
 
 require 'scraperwiki'
 require 'nokogiri'
+
 require 'scraped_page_archive/open-uri'
 
 def noko_for(url)
@@ -29,4 +30,5 @@ def scrape_list(url)
   end
 end
 
+ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
 scrape_list('http://dpr.go.id/en/anggota')
