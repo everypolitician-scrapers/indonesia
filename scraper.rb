@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 # #!/bin/env ruby
 # encoding: utf-8
 
@@ -18,13 +19,13 @@ def scrape_list(url)
     img = URI.join(url, tds[1].css('img/@src').to_s).to_s
     id = tds[1].css('a/@href').to_s.split('/').last
     data = {
-      id: id,
-      name: tds[2].css('a').text,
+      id:      id,
+      name:    tds[2].css('a').text,
       faction: details[1],
-      area: details[2],
-      image: img,
-      term: 18,
-      source: url
+      area:    details[2],
+      image:   img,
+      term:    18,
+      source:  url,
     }
     ScraperWiki.save_sqlite([:id], data)
   end
