@@ -9,7 +9,7 @@ request:
     Accept-Encoding:
     - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
     Accept:
-    - '*/*'
+    - "*/*"
     User-Agent:
     - Ruby
 response:
@@ -18,11 +18,11 @@ response:
     message: OK
   headers:
     Date:
-    - Sat, 07 Jan 2017 10:48:46 GMT
+    - Sun, 08 Jan 2017 01:13:46 GMT
     Server:
     - DPR Web Server
     Set-Cookie:
-    - PHPSESSID=uistvdgnp2s7dhvfrls3s71ur5; path=/; HttpOnly
+    - PHPSESSID=ja3kjbpq2h7h780qatsinqedn6; path=/; HttpOnly
     Expires:
     - Thu, 19 Nov 1981 08:52:00 GMT
     Cache-Control:
@@ -38,4 +38,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Sat, 07 Jan 2017 11:02:55 GMT
+recorded_at: Sun, 08 Jan 2017 01:27:56 GMT
