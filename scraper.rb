@@ -41,10 +41,6 @@ class MemberRow < Scraped::HTML
     tds[1].css('img/@src').text
   end
 
-  field :term do
-    18
-  end
-
   field :source do
     url
   end
@@ -61,7 +57,10 @@ class MemberRow < Scraped::HTML
 end
 
 url = 'http://dpr.go.id/en/anggota'
-data = MembersPage.new(response: Scraped::Request.new(url: url).response).members.map(&:to_h)
+page = MembersPage.new(response: Scraped::Request.new(url: url).response)
+data = page.members.map do |mem|
+  mem.to_h.merge(term: 18)
+end
 # puts data
 
 ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
