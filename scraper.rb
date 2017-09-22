@@ -58,10 +58,8 @@ end
 
 url = 'http://dpr.go.id/en/anggota'
 page = MembersPage.new(response: Scraped::Request.new(url: url).response)
-data = page.members.map do |mem|
-  mem.to_h.merge(term: 18)
-end
-# puts data
+data = page.members.map { |mem| mem.to_h.merge(term: 18) }
+data.each { |mem| puts mem.reject { |_, v| v.to_s.empty? }.sort_by { |k, _| k }.to_h } if ENV['MORPH_DEBUG']
 
 ScraperWiki.sqliteexecute('DROP TABLE data') rescue nil
 ScraperWiki.save_sqlite([:id], data)
