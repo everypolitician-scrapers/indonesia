@@ -11,7 +11,7 @@ require 'nokogiri'
 require 'scraped_page_archive/open-uri'
 
 class MembersPage < Scraped::HTML
-  decorator Scraped::Response::Decorator::AbsoluteUrls
+  decorator Scraped::Response::Decorator::CleanUrls
 
   field :members do
     noko.css('#data-anggota tbody tr').map do |tr|
