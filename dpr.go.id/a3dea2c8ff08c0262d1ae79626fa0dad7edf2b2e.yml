@@ -18,11 +18,11 @@ response:
     message: OK
   headers:
     Date:
-    - Mon, 26 Mar 2018 13:42:47 GMT
+    - Mon, 26 Mar 2018 22:23:53 GMT
     Server:
     - DPR Web Server
     Set-Cookie:
-    - PHPSESSID=r5v7s5rdemj7oc8338ek04a8l5; path=/; HttpOnly
+    - PHPSESSID=982pk786l0804ko8r8vhtu1dc1; path=/; HttpOnly
     Expires:
     - Thu, 19 Nov 1981 08:52:00 GMT
     Cache-Control:
@@ -38,4 +38,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Mon, 26 Mar 2018 13:58:38 GMT
+recorded_at: Mon, 26 Mar 2018 22:39:43 GMT
