@@ -20,7 +20,7 @@ response:
     P3p:
     - CP="{}"
     Content-Length:
-    - '17033'
+    - '15554'
     Cache-Control:
     - no-store, must-revalidate, no-cache, max-age=0
     Content-Type:
@@ -28,4 +28,4 @@ response:
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Wed, 22 May 2019 17:55:21 GMT
+recorded_at: Wed, 22 May 2019 21:18:47 GMT
