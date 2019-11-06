@@ -18,11 +18,11 @@ response:
     message: OK
   headers:
     Date:
-    - Wed, 06 Nov 2019 06:30:45 GMT
+    - Wed, 06 Nov 2019 07:47:25 GMT
     Server:
     - DPR Web Server
     Set-Cookie:
-    - PHPSESSID=9q5ifmqqhh8i8k6npig3d4k6d7; path=/; HttpOnly
+    - PHPSESSID=05l7m4j6rdmgap4ueb1s36vin6; path=/; HttpOnly
     Expires:
     - Thu, 19 Nov 1981 08:52:00 GMT
     Cache-Control:
@@ -32,10 +32,10 @@ response:
     Vary:
     - Accept-Encoding
     Content-Length:
-    - '26949'
+    - '26947'
     Content-Type:
     - text/html; charset=UTF-8
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Wed, 06 Nov 2019 06:49:01 GMT
+recorded_at: Wed, 06 Nov 2019 08:05:41 GMT
