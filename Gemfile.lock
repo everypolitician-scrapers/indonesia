@@ -85,7 +85,7 @@ GEM
     diskcached (1.1.3)
     domain_name (0.5.20170404)
       unf (>= 0.0.5, < 1.0.0)
-    excon (0.59.0)
+    excon (0.71.0)
     execjs (2.7.0)
     faraday (0.13.1)
       multipart-post (>= 1.2, < 3)
