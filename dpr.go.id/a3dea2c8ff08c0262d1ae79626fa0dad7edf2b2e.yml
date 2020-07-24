@@ -14,36 +14,22 @@ request:
     - Ruby
 response:
   status:
-    code: 200
-    message: OK
+    code: 301
+    message: Moved Permanently
   headers:
     Server:
-    - DPR Web Server
-    Expires:
-    - Thu, 19 Nov 1981 08:52:00 GMT
-    Cache-Control:
-    - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    Pragma:
-    - no-cache
-    Content-Type:
-    - text/html; charset=UTF-8
-    X-Akamai-Transformed:
-    - 9 28301 0 pmb=mRUM,1
-    Vary:
-    - Accept-Encoding
+    - AkamaiGHost
+    Content-Length:
+    - '0'
+    Location:
+    - http://www.dpr.go.id/en/anggota
     Date:
-    - Fri, 24 Jul 2020 05:33:35 GMT
-    Transfer-Encoding:
-    - chunked
+    - Fri, 24 Jul 2020 23:20:31 GMT
     Connection:
-    - Transfer-Encoding
     - keep-alive
-    Set-Cookie:
-    - PHPSESSID=fgh9n671k3rm81quud0mnpdv55; path=/; HttpOnly
     Server-Timing:
-    - cdn-cache; desc=MISS
-    - edge; dur=1018
-    - origin; dur=192
+    - cdn-cache; desc=HIT
+    - edge; dur=1
     X-Content-Type-Options:
     - nosniff
     X-Xss-Protection:
@@ -53,4 +39,4 @@ response:
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Fri, 24 Jul 2020 05:33:35 GMT
+recorded_at: Fri, 24 Jul 2020 23:20:31 GMT
