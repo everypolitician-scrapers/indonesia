@@ -14,8 +14,8 @@ request:
     - Ruby
 response:
   status:
-    code: 301
-    message: Moved Permanently
+    code: 302
+    message: Moved Temporarily
   headers:
     Server:
     - AkamaiGHost
@@ -24,7 +24,7 @@ response:
     Location:
     - http://www.dpr.go.id/en/anggota
     Date:
-    - Wed, 29 Jul 2020 22:17:17 GMT
+    - Thu, 30 Jul 2020 09:52:07 GMT
     Connection:
     - keep-alive
     Server-Timing:
@@ -39,4 +39,4 @@ response:
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Wed, 29 Jul 2020 22:17:17 GMT
+recorded_at: Thu, 30 Jul 2020 09:52:07 GMT
