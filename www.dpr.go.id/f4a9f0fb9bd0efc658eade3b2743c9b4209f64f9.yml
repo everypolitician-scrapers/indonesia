@@ -32,18 +32,18 @@ response:
     Vary:
     - Accept-Encoding
     Date:
-    - Thu, 30 Jul 2020 09:52:08 GMT
+    - Thu, 30 Jul 2020 13:41:20 GMT
     Transfer-Encoding:
     - chunked
     Connection:
     - Transfer-Encoding
     - keep-alive
     Set-Cookie:
-    - PHPSESSID=va4bnepbbo5ra5bbi1fra3rbv4; path=/; HttpOnly
+    - PHPSESSID=e2g6nf8a7umenutpqsji8shgc2; path=/; HttpOnly
     Server-Timing:
     - cdn-cache; desc=MISS
-    - edge; dur=413
-    - origin; dur=221
+    - edge; dur=578
+    - origin; dur=424
     X-Content-Type-Options:
     - nosniff
     X-Xss-Protection:
@@ -53,4 +53,4 @@ response:
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Thu, 30 Jul 2020 09:52:08 GMT
+recorded_at: Thu, 30 Jul 2020 13:41:20 GMT
