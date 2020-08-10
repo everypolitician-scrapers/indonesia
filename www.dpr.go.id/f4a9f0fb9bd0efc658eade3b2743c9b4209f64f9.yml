@@ -28,22 +28,22 @@ response:
     Content-Type:
     - text/html; charset=UTF-8
     X-Akamai-Transformed:
-    - 9 40741 0 pmb=mRUM,1
+    - 9 40693 0 pmb=mRUM,1
     Vary:
     - Accept-Encoding
     Date:
-    - Mon, 10 Aug 2020 04:01:41 GMT
+    - Mon, 10 Aug 2020 20:50:05 GMT
     Transfer-Encoding:
     - chunked
     Connection:
     - Transfer-Encoding
     - keep-alive
     Set-Cookie:
-    - PHPSESSID=nu1pbnpso3jflm1veer9erplq5; path=/; HttpOnly
+    - PHPSESSID=bob04dibgmqs8u5gnp8kb54pr0; path=/; HttpOnly
     Server-Timing:
     - cdn-cache; desc=MISS
-    - edge; dur=811
-    - origin; dur=198
+    - edge; dur=593
+    - origin; dur=184
     X-Content-Type-Options:
     - nosniff
     X-Xss-Protection:
@@ -53,4 +53,4 @@ response:
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Mon, 10 Aug 2020 04:01:41 GMT
+recorded_at: Mon, 10 Aug 2020 20:50:05 GMT
