@@ -24,7 +24,7 @@ response:
     Location:
     - http://www.dpr.go.id/en/anggota
     Date:
-    - Thu, 13 Aug 2020 04:48:29 GMT
+    - Thu, 13 Aug 2020 15:35:42 GMT
     Connection:
     - keep-alive
     Server-Timing:
@@ -39,4 +39,4 @@ response:
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Thu, 13 Aug 2020 04:48:29 GMT
+recorded_at: Thu, 13 Aug 2020 15:35:42 GMT
