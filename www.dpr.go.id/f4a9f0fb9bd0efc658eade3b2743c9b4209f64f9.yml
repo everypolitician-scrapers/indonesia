@@ -17,34 +17,25 @@ response:
     code: 200
     message: OK
   headers:
+    Date:
+    - Sat, 17 Oct 2020 18:44:42 GMT
     Server:
     - DPR Web Server
+    Set-Cookie:
+    - PHPSESSID=n5p95tos1pm7sp0975jcc6m6m0; path=/; HttpOnly
     Expires:
     - Thu, 19 Nov 1981 08:52:00 GMT
     Cache-Control:
     - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
     Pragma:
     - no-cache
-    Content-Type:
-    - text/html; charset=UTF-8
     Vary:
     - Accept-Encoding
-    Date:
-    - Sat, 17 Oct 2020 13:10:12 GMT
-    Transfer-Encoding:
-    - chunked
-    Connection:
-    - Transfer-Encoding
-    - keep-alive
-    Set-Cookie:
-    - PHPSESSID=j8lklmne0tt5grts1lad2g0c65; path=/; HttpOnly
-    X-Content-Type-Options:
-    - nosniff
-    X-Xss-Protection:
-    - 1; mode=block
-    X-Frame-Options:
-    - SAMEORIGIN
+    Content-Length:
+    - '28405'
+    Content-Type:
+    - text/html; charset=UTF-8
   body:
-    encoding: UTF-8
+    encoding: ASCII-8BIT
   http_version: 
-recorded_at: Sat, 17 Oct 2020 13:10:12 GMT
+recorded_at: Sat, 17 Oct 2020 18:45:34 GMT
