@@ -18,24 +18,29 @@ response:
     message: OK
   headers:
     Date:
-    - Thu, 22 Oct 2020 17:23:25 GMT
+    - Fri, 23 Oct 2020 04:43:32 GMT
     Server:
     - DPR Web Server
     Set-Cookie:
-    - PHPSESSID=qoqr4rq46l8i4dcs1825nph657; path=/; HttpOnly
+    - NSC_ESNS=0048d972-cd1b-1f92-9678-005056a5151b_1665714482_2632315767_00000000000004413383;
+      Path=/; Expires=Fri, 23-Oct-2020 04:43:47 GMT
+    - PHPSESSID=gqb37djlsl69p2frhfedetpgi3; path=/; HttpOnly
     Expires:
     - Thu, 19 Nov 1981 08:52:00 GMT
     Cache-Control:
+    - no-cache
     - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
     Pragma:
     - no-cache
     Vary:
     - Accept-Encoding
-    Content-Length:
-    - '28376'
+    X-Via-Nscopi:
+    - '1.0'
+    Transfer-Encoding:
+    - chunked
     Content-Type:
     - text/html; charset=UTF-8
   body:
-    encoding: ASCII-8BIT
+    encoding: UTF-8
   http_version: 
-recorded_at: Thu, 22 Oct 2020 17:24:28 GMT
+recorded_at: Fri, 23 Oct 2020 04:44:37 GMT
